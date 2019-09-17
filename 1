@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double p, n, i;
+            Console.Write("Введите цену одного килограмма конфет: ");
+            p = double.Parse(Console.ReadLine());
+            p = p / 10;
+            for (i = 1; i <= 10; i++)
+            {
+                n = i / 10;
+                Console.Write(n);
+                n = p * i;
+                Console.Write(" кг");
+                Console.Write(" конфет стоит ");
+                Console.WriteLine(n);
+            }
+        }
+    }
+}
