@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double N, i, s, p;
+            s = 1;
+            Console.Write("Введите N: ");
+            N = double.Parse(Console.ReadLine());
+            for (i = 1; i <= N; i++)
+            {
+                p = i / 10 + 1;
+                s = s * p;
+            }
+            Console.Write("Произведение ");
+            Console.Write(N);
+            Console.Write(" сомножителей равно: ");
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+    }
+}
