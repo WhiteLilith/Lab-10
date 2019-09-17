@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloLearn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, s, p;
+            int N, i;
+            Console.Write("Введите число А: ");
+            A = double.Parse(Console.ReadLine());
+            Console.Write("Введите число N: ");
+            N = int.Parse(Console.ReadLine());
+            p = 1;
+            s = 0;
+            for (i = 0; i <= N; i++)
+            {
+                s = s + p;
+                p = p * A;
+            }
+            Console.Write("Искомая сумма равна: ");
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+    }
+}
